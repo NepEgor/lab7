@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Plotter</title>
+	
+	<style>
+		.td_right {
+			float: right;
+		}
+		
+		.width450 {
+			width: 450px
+		}
+	</style>
+	
+	<script src= "https://code.jquery.com/jquery-2.2.4.min.js" ></script>
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/flot/0.8.3/jquery.flot.js" ></script>
+	<script src="index.js"></script>
+	
+</head>
+
+<body>
+	<div style="margin-top:50px; margin-left:50px; width:500px">
+		
+		<table>
+			<tr>
+				<td class=td_right>From:</td>
+				<td><input id="InpFrom" class=width450></input></td>
+			</tr>
+			<tr>
+				<td class=td_right>To:</td>
+				<td><input id="InpTo" class=width450></input></td>
+			</tr>
+			<tr>
+				<td class=td_right>Fun:</td>
+				<td><input id="InpFun" class=width450></input></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td class=td_right>
+					<button id="BtnPlot">Plot!</button>
+					<button id="BtnAdd">Add!</button>
+				</td>
+			</tr>
+		</table>
+		
+		<div id="Output" style="margin-top:20px; width:500px; height:500px"></div>
+		
+	</div>
+</body>
+</html>
